@@ -1,2 +1,2 @@
 # Graph-Neural-Networks-for-Polarity-Vectors-Prediction-in-3D-Microscopy-Images
-Paper submited at 2024 Annual International Conference of the IEEE Engineering in Medicine and Biology Society, to be held in Orlando, Florida, USA, July 15-19, 2024.[https://embc.embs.org/2024/](https://embc.embs.org/2024/).
+Paper submited at 2024 Annual International Conference of the IEEE Engineering in Medicine and Biology Society, to be held in Orlando, Florida, USA, July 15-19, 2024 ([https://embc.embs.org/2024/](https://embc.embs.org/2024/)).
