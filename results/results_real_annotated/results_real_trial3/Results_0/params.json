@@ -1,0 +1,131 @@
+{
+  "job_parameters": {
+    "data_type_train": "Real",
+    "data_type_test": "Real",
+    "model_type": "GNN_Classifier",
+    "knn_inter_nodes": 7,
+    "knn_inter_nodes_max": 7,
+    "knn_intra_nodes": 0,
+    "normalize": true,
+    "node_feats": [
+      "Y",
+      "X",
+      "Z",
+      "node_type"
+    ],
+    "edge_feats": [
+      "delta_x",
+      "delta_y",
+      "delta_z",
+      "weight",
+      "angle_orientation_theta",
+      "angle_orientation_phi"
+    ],
+    "to_undirected": false,
+    "lr": 0.001,
+    "n_epochs": 100,
+    "early_stopper": null,
+    "scheduler": null,
+    "pos_weight": true,
+    "criterion": "BCEWithLogitsLoss",
+    "device": "cpu",
+    "scale_features": true,
+    "index_train": "all",
+    "index_test": "all",
+    "cross_validation_groups_train": [
+      [
+        "Crop1.csv",
+        "Crop2.csv",
+        "Crop3.csv",
+        "Crop4.csv"
+      ],
+      [
+        "Crop5_BC.csv",
+        "Crop6_BC.csv"
+      ],
+      [
+        "Crop7_BC.csv",
+        "Crop8_BC.csv"
+      ]
+    ],
+    "cross_validation_groups_test": [
+      [
+        "Crop1.csv",
+        "Crop2.csv",
+        "Crop3.csv",
+        "Crop4.csv"
+      ],
+      [
+        "Crop5_BC.csv",
+        "Crop6_BC.csv"
+      ],
+      [
+        "Crop7_BC.csv",
+        "Crop8_BC.csv"
+      ]
+    ],
+    "num_classes": 1,
+    "num_node_features": 4,
+    "num_edge_features": 6,
+    "num_total_features": 14
+  },
+  "aggregated_metrics": {
+    "rouc_auc_score": 0.981375,
+    "@best": {
+      "metrics": {
+        "acc": 0.938125,
+        "precision": 0.725375,
+        "recall": 0.959,
+        "f1_score": 0.821625,
+        "tp": 463,
+        "fp": 189,
+        "tn": 2703,
+        "fn": 19,
+        "tp_percent": 0.959,
+        "tp_total_count": 482
+      },
+      "@constraints": {
+        "metrics": {
+          "acc": 0.967,
+          "precision": 0.900375,
+          "recall": 0.8616250000000001,
+          "f1_score": 0.880375,
+          "tp": 418,
+          "fp": 44,
+          "tn": 2848,
+          "fn": 64,
+          "tp_percent": 0.8616250000000001,
+          "tp_total_count": 482
+        }
+      }
+    },
+    "@0.5": {
+      "metrics": {
+        "acc": 0.9432499999999999,
+        "precision": 0.7444999999999999,
+        "recall": 0.926625,
+        "f1_score": 0.824,
+        "tp": 451,
+        "fp": 159,
+        "tn": 2733,
+        "fn": 31,
+        "tp_percent": 0.926625,
+        "tp_total_count": 482
+      },
+      "@constraints": {
+        "metrics": {
+          "acc": 0.967,
+          "precision": 0.90025,
+          "recall": 0.858375,
+          "f1_score": 0.8781249999999999,
+          "tp": 416,
+          "fp": 43,
+          "tn": 2849,
+          "fn": 66,
+          "tp_percent": 0.858375,
+          "tp_total_count": 482
+        }
+      }
+    }
+  }
+}
