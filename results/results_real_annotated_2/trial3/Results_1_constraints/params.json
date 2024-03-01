@@ -1,0 +1,143 @@
+{
+  "job_parameters": {
+    "data_type_train": "Real",
+    "data_type_test": "Real",
+    "model_type": "GNN_Classifier",
+    "knn_inter_nodes": 7,
+    "knn_inter_nodes_max": 7,
+    "knn_intra_nodes": 0,
+    "normalize": true,
+    "node_feats": [
+      "Y",
+      "X",
+      "Z",
+      "node_type"
+    ],
+    "edge_feats": [
+      "delta_x",
+      "delta_y",
+      "delta_z",
+      "weight"
+    ],
+    "to_undirected": false,
+    "lr": 0.001,
+    "n_epochs": 100,
+    "early_stopper": null,
+    "scheduler": null,
+    "pos_weight": true,
+    "criterion": "BCEWithLogitsLoss",
+    "device": "cpu",
+    "scale_features": true,
+    "index_train": "all",
+    "index_test": "all",
+    "cross_validation_groups_train": [
+      [
+        "Crop1.csv",
+        "Crop2.csv",
+        "Crop3.csv",
+        "Crop4.csv"
+      ],
+      [
+        "Crop5_BC.csv",
+        "Crop6_BC.csv"
+      ],
+      [
+        "Crop7_BC.csv",
+        "Crop8_BC.csv"
+      ]
+    ],
+    "cross_validation_groups_test": [
+      [
+        "Crop1.csv",
+        "Crop2.csv",
+        "Crop3.csv",
+        "Crop4.csv"
+      ],
+      [
+        "Crop5_BC.csv",
+        "Crop6_BC.csv"
+      ],
+      [
+        "Crop7_BC.csv",
+        "Crop8_BC.csv"
+      ]
+    ],
+    "num_classes": 1,
+    "num_node_features": 4,
+    "num_edge_features": 4,
+    "num_total_features": 12
+  },
+  "aggregated_metrics": {
+    "rouc_auc_score": 0.982125,
+    "@best": {
+      "metrics": {
+        "acc": 0.942125,
+        "precision": 0.7415,
+        "recall": 0.957625,
+        "f1_score": 0.8316250000000001,
+        "tp": 462,
+        "fp": 181,
+        "tn": 2711,
+        "fn": 20,
+        "tp_percent": 0.957625,
+        "tp_total_count": 482
+      },
+      "@constraints": {
+        "metrics": {
+          "acc": 0.968,
+          "precision": 0.902875,
+          "recall": 0.868125,
+          "f1_score": 0.885125,
+          "tp": 422,
+          "fp": 42,
+          "tn": 2850,
+          "fn": 60,
+          "tp_percent": 0.868125,
+          "tp_total_count": 482
+        }
+      }
+    },
+    "@0.5": {
+      "metrics": {
+        "acc": 0.9466249999999999,
+        "precision": 0.75425,
+        "recall": 0.933875,
+        "f1_score": 0.833875,
+        "tp": 452,
+        "fp": 155,
+        "tn": 2737,
+        "fn": 30,
+        "tp_percent": 0.933875,
+        "tp_total_count": 482
+      },
+      "@constraints": {
+        "metrics": {
+          "acc": 0.966375,
+          "precision": 0.90125,
+          "recall": 0.85675,
+          "f1_score": 0.878375,
+          "tp": 417,
+          "fp": 42,
+          "tn": 2850,
+          "fn": 65,
+          "tp_percent": 0.85675,
+          "tp_total_count": 482
+        }
+      }
+    },
+    "@constraints": {
+      "metrics": {
+        "acc": 0.966125,
+        "precision": 0.8835,
+        "recall": 0.8785000000000001,
+        "f1_score": 0.881,
+        "tp": 426,
+        "fp": 53,
+        "tn": 2839,
+        "fn": 56,
+        "tp_percent": 0.8785000000000001,
+        "tp_total_count": 482
+      }
+    }
+  }
+}

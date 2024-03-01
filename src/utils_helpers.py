@@ -1048,7 +1048,7 @@ def get_nested_dict(d, keys):
         nested_dict = nested_dict[key]
     return nested_dict
 
-def plot_table(results_list, metrics_dict_entries = [["@best","metrics"],["@best","@constraints","metrics"]],
+def plot_table(results_list, metrics_dict_entries = [["@best","metrics"],["@best","@constraints","metrics"], ["@constraints", "metrics"]],
               make_print = False):
     
     df_entries = []
@@ -1084,9 +1084,12 @@ def plot_table(results_list, metrics_dict_entries = [["@best","metrics"],["@best
                 
             constraints = "NA" 
             if metrics_dict_entry is not None:
-                constraints = False
+                constraints = "False"
                 if "@constraints" in metrics_dict_entry:
-                    constraints = True
+                    if "@best" in metrics_dict_entry:
+                        constraints = "True w/ Threshold"
+                    else:
+                        constraints = "True w/o Threshold"
             
             acc =  metrics_dict["acc"]
             precision = metrics_dict["precision"]
@@ -1125,22 +1128,6 @@ def plot_table(results_list, metrics_dict_entries = [["@best","metrics"],["@best
                 "TP":formatted_tp, "FP":formatted_fp, "TN":formatted_tn, "FN":formatted_fn
             }
             df_entries.append(formatted_values_dict)
-           
-            if(make_print):
-                # Print the formatted values in the desired order
-                if(count==0):
-                    column_names = list(formatted_values_dict.keys())
-                    # Print the column names
-                    print("c|"*len(column_names))
-                    column_string = ' & '.join(column_names) + ' \\\\'
-                    print(column_string)
-                    # Print the table separator (\hline)
-                    print("\\hline")
-                    count+=1
-
-                formatted_values_list = [str(value) for value in list(formatted_values_dict.values())]
-                formatted_string = ' & '.join(formatted_values_list) + ' \\\\'
-                print(formatted_string)
             
     df = pd.DataFrame(df_entries).reset_index(drop=True)
     return df
