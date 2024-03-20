@@ -1087,9 +1087,11 @@ def plot_table(results_list, metrics_dict_entries = [["@best","metrics"],["@best
                 constraints = "False"
                 if "@constraints" in metrics_dict_entry:
                     if "@best" in metrics_dict_entry:
-                        constraints = "True w/ Threshold"
+                        constraints = "Greedy w/ Threshold"
                     else:
-                        constraints = "True w/o Threshold"
+                        constraints = "Greedy w/o Threshold"
+                elif "@constraints_opt" in metrics_dict_entry:
+                    constraints = "Optimization"
             
             acc =  metrics_dict["acc"]
             precision = metrics_dict["precision"]
