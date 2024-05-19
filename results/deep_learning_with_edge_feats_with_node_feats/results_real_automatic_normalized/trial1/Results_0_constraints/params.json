@@ -84,16 +84,16 @@
       ],
       "thresholds": [
         Infinity,
-        0.9857712984085083,
-        3.3740053536123856e-19
+        0.9677609205245972,
+        1.2861160552809035e-19
       ]
     },
     "@best": {
       "metrics": {
-        "acc": 0.868625,
+        "acc": 0.869125,
         "precision": 0.0,
         "TPR": 0,
-        "FPR": 0.131375,
+        "FPR": 0.130875,
         "f1_score": 0,
         "tp": 0,
         "fp": 600,
@@ -104,10 +104,10 @@
       },
       "@constraints": {
         "metrics": {
-          "acc": 0.9185000000000001,
+          "acc": 0.918625,
           "precision": 0.0,
           "TPR": 0,
-          "FPR": 0.0815,
+          "FPR": 0.081375,
           "f1_score": 0,
           "tp": 0,
           "fp": 363,
@@ -120,28 +120,28 @@
     },
     "@0.5": {
       "metrics": {
-        "acc": 0.860625,
+        "acc": 0.861375,
         "precision": 0.0,
         "TPR": 0,
-        "FPR": 0.139375,
+        "FPR": 0.138625,
         "f1_score": 0,
         "tp": 0,
-        "fp": 636,
-        "tn": 3844,
+        "fp": 637,
+        "tn": 3843,
         "fn": 0,
         "tp_percent": 0,
         "tp_total_count": 0
       },
       "@constraints": {
         "metrics": {
-          "acc": 0.917625,
+          "acc": 0.918,
           "precision": 0.0,
           "TPR": 0,
-          "FPR": 0.082375,
+          "FPR": 0.082,
           "f1_score": 0,
           "tp": 0,
-          "fp": 368,
-          "tn": 4112,
+          "fp": 366,
+          "tn": 4114,
           "fn": 0,
           "tp_percent": 0,
           "tp_total_count": 0

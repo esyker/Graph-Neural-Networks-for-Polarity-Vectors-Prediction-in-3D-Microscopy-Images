@@ -84,16 +84,16 @@
       ],
       "thresholds": [
         Infinity,
-        0.9756627678871155,
-        8.0908729883087855e-22
+        0.9845311641693115,
+        3.2540176601165475e-21
       ]
     },
     "@best": {
       "metrics": {
-        "acc": 0.86225,
+        "acc": 0.862625,
         "precision": 0.0,
         "TPR": 0,
-        "FPR": 0.13775,
+        "FPR": 0.137375,
         "f1_score": 0,
         "tp": 0,
         "fp": 629,
@@ -104,14 +104,14 @@
       },
       "@constraints": {
         "metrics": {
-          "acc": 0.921875,
+          "acc": 0.922,
           "precision": 0.0,
           "TPR": 0,
-          "FPR": 0.078125,
+          "FPR": 0.078,
           "f1_score": 0,
           "tp": 0,
-          "fp": 350,
-          "tn": 4130,
+          "fp": 349,
+          "tn": 4131,
           "fn": 0,
           "tp_percent": 0,
           "tp_total_count": 0
@@ -120,28 +120,28 @@
     },
     "@0.5": {
       "metrics": {
-        "acc": 0.83175,
+        "acc": 0.845,
         "precision": 0.0,
         "TPR": 0,
-        "FPR": 0.16825,
+        "FPR": 0.155,
         "f1_score": 0,
         "tp": 0,
-        "fp": 770,
-        "tn": 3710,
+        "fp": 714,
+        "tn": 3766,
         "fn": 0,
         "tp_percent": 0,
         "tp_total_count": 0
       },
       "@constraints": {
         "metrics": {
-          "acc": 0.9187500000000001,
+          "acc": 0.9201250000000001,
           "precision": 0.0,
           "TPR": 0,
-          "FPR": 0.08125,
+          "FPR": 0.079875,
           "f1_score": 0,
           "tp": 0,
-          "fp": 363,
-          "tn": 4117,
+          "fp": 358,
+          "tn": 4122,
           "fn": 0,
           "tp_percent": 0,
           "tp_total_count": 0
@@ -150,14 +150,14 @@
     },
     "@constraints": {
       "metrics": {
-        "acc": 0.908625,
+        "acc": 0.909,
         "precision": 0.0,
         "TPR": 0,
-        "FPR": 0.091375,
+        "FPR": 0.091,
         "f1_score": 0,
         "tp": 0,
-        "fp": 411,
-        "tn": 4069,
+        "fp": 409,
+        "tn": 4071,
         "fn": 0,
         "tp_percent": 0,
         "tp_total_count": 0

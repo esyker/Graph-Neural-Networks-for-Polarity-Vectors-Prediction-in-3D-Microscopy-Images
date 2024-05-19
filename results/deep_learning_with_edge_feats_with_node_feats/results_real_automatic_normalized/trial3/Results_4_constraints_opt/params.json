@@ -1,0 +1,182 @@
+{
+  "job_parameters": {
+    "data_type_train": "Real",
+    "data_type_test": "Real_automatic",
+    "model_type": "MLP",
+    "knn_inter_nodes": 10,
+    "knn_inter_nodes_max": 7,
+    "knn_intra_nodes": 0,
+    "normalize": true,
+    "node_feats": [
+      "Y",
+      "X",
+      "Z",
+      "node_type"
+    ],
+    "edge_feats": [
+      "delta_x",
+      "delta_y",
+      "delta_z",
+      "weight",
+      "angle_orientation_theta",
+      "angle_orientation_phi"
+    ],
+    "to_undirected": false,
+    "lr": 0.001,
+    "n_epochs": 100,
+    "early_stopper": null,
+    "scheduler": null,
+    "pos_weight": true,
+    "criterion": "BCEWithLogitsLoss",
+    "device": "cpu",
+    "scale_features": true,
+    "index_train": "all",
+    "index_test": "all",
+    "cross_validation_groups_train": [
+      [
+        "Crop1.csv",
+        "Crop2.csv",
+        "Crop3.csv",
+        "Crop4.csv"
+      ],
+      [
+        "Crop5_BC.csv",
+        "Crop6_BC.csv"
+      ],
+      [
+        "Crop7_BC.csv",
+        "Crop8_BC.csv"
+      ]
+    ],
+    "cross_validation_groups_test": [
+      [
+        "Crop1.csv",
+        "Crop2.csv",
+        "Crop3.csv",
+        "Crop4.csv"
+      ],
+      [
+        "Crop5_BC.csv",
+        "Crop6_BC.csv"
+      ],
+      [
+        "Crop7_BC.csv",
+        "Crop8_BC.csv"
+      ]
+    ],
+    "num_classes": 1,
+    "num_node_features": 4,
+    "num_edge_features": 6,
+    "num_total_features": 14
+  },
+  "aggregated_metrics": {
+    "rouc_auc_score": 0,
+    "rouc_auc_curve": {
+      "fpr": [
+        0.0,
+        0.0014492753623188406,
+        1.0
+      ],
+      "tpr": [
+        NaN,
+        NaN,
+        NaN
+      ],
+      "thresholds": [
+        Infinity,
+        0.9923073649406433,
+        1.3813515212474596e-16
+      ]
+    },
+    "@best": {
+      "metrics": {
+        "acc": 0.86875,
+        "precision": 0.0,
+        "TPR": 0,
+        "FPR": 0.13125,
+        "f1_score": 0,
+        "tp": 0,
+        "fp": 632,
+        "tn": 3848,
+        "fn": 0,
+        "tp_percent": 0,
+        "tp_total_count": 0
+      },
+      "@constraints": {
+        "metrics": {
+          "acc": 0.92875,
+          "precision": 0.0,
+          "TPR": 0,
+          "FPR": 0.07125000000000001,
+          "f1_score": 0,
+          "tp": 0,
+          "fp": 334,
+          "tn": 4146,
+          "fn": 0,
+          "tp_percent": 0,
+          "tp_total_count": 0
+        }
+      }
+    },
+    "@0.5": {
+      "metrics": {
+        "acc": 0.858125,
+        "precision": 0.0,
+        "TPR": 0,
+        "FPR": 0.141875,
+        "f1_score": 0,
+        "tp": 0,
+        "fp": 676,
+        "tn": 3804,
+        "fn": 0,
+        "tp_percent": 0,
+        "tp_total_count": 0
+      },
+      "@constraints": {
+        "metrics": {
+          "acc": 0.926625,
+          "precision": 0.0,
+          "TPR": 0,
+          "FPR": 0.073375,
+          "f1_score": 0,
+          "tp": 0,
+          "fp": 339,
+          "tn": 4141,
+          "fn": 0,
+          "tp_percent": 0,
+          "tp_total_count": 0
+        }
+      }
+    },
+    "@constraints": {
+      "metrics": {
+        "acc": 0.9085000000000001,
+        "precision": 0.0,
+        "TPR": 0,
+        "FPR": 0.0915,
+        "f1_score": 0,
+        "tp": 0,
+        "fp": 411,
+        "tn": 4069,
+        "fn": 0,
+        "tp_percent": 0,
+        "tp_total_count": 0
+      }
+    },
+    "@constraints_opt": {
+      "metrics": {
+        "acc": 0.90575,
+        "precision": 0.0,
+        "TPR": 0,
+        "FPR": 0.09425,
+        "f1_score": 0,
+        "tp": 0,
+        "fp": 424,
+        "tn": 4056,
+        "fn": 0,
+        "tp_percent": 0,
+        "tp_total_count": 0
+      }
+    }
+  }
+}

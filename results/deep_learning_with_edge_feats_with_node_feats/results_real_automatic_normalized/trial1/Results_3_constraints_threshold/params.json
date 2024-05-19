@@ -82,50 +82,20 @@
       ],
       "thresholds": [
         Infinity,
-        0.9701799750328064,
-        2.37744183091322e-28
+        0.9862051606178284,
+        5.622022344892898e-24
       ]
     },
     "@best": {
       "metrics": {
-        "acc": 0.86325,
+        "acc": 0.86775,
         "precision": 0.0,
         "TPR": 0,
-        "FPR": 0.13675,
+        "FPR": 0.13225,
         "f1_score": 0,
         "tp": 0,
-        "fp": 630,
-        "tn": 3850,
-        "fn": 0,
-        "tp_percent": 0,
-        "tp_total_count": 0
-      },
-      "@constraints": {
-        "metrics": {
-          "acc": 0.921375,
-          "precision": 0.0,
-          "TPR": 0,
-          "FPR": 0.078625,
-          "f1_score": 0,
-          "tp": 0,
-          "fp": 351,
-          "tn": 4129,
-          "fn": 0,
-          "tp_percent": 0,
-          "tp_total_count": 0
-        }
-      }
-    },
-    "@0.5": {
-      "metrics": {
-        "acc": 0.856,
-        "precision": 0.0,
-        "TPR": 0,
-        "FPR": 0.144,
-        "f1_score": 0,
-        "tp": 0,
-        "fp": 662,
-        "tn": 3818,
+        "fp": 607,
+        "tn": 3873,
         "fn": 0,
         "tp_percent": 0,
         "tp_total_count": 0
@@ -146,12 +116,42 @@
         }
       }
     },
-    "@constraints": {
+    "@0.5": {
       "metrics": {
-        "acc": 0.9087500000000001,
+        "acc": 0.85825,
         "precision": 0.0,
         "TPR": 0,
-        "FPR": 0.09125,
+        "FPR": 0.14175,
+        "f1_score": 0,
+        "tp": 0,
+        "fp": 648,
+        "tn": 3832,
+        "fn": 0,
+        "tp_percent": 0,
+        "tp_total_count": 0
+      },
+      "@constraints": {
+        "metrics": {
+          "acc": 0.92025,
+          "precision": 0.0,
+          "TPR": 0,
+          "FPR": 0.07975,
+          "f1_score": 0,
+          "tp": 0,
+          "fp": 356,
+          "tn": 4124,
+          "fn": 0,
+          "tp_percent": 0,
+          "tp_total_count": 0
+        }
+      }
+    },
+    "@constraints": {
+      "metrics": {
+        "acc": 0.908875,
+        "precision": 0.0,
+        "TPR": 0,
+        "FPR": 0.091125,
         "f1_score": 0,
         "tp": 0,
         "fp": 410,

@@ -82,34 +82,34 @@
       ],
       "thresholds": [
         Infinity,
-        0.9945746064186096,
-        6.4106588462727026e-18
+        0.9670863151550293,
+        8.76606269740205e-21
       ]
     },
     "@best": {
       "metrics": {
-        "acc": 0.85675,
+        "acc": 0.85975,
         "precision": 0.0,
         "TPR": 0,
-        "FPR": 0.14325,
+        "FPR": 0.14025,
         "f1_score": 0,
         "tp": 0,
-        "fp": 651,
-        "tn": 3829,
+        "fp": 643,
+        "tn": 3837,
         "fn": 0,
         "tp_percent": 0,
         "tp_total_count": 0
       },
       "@constraints": {
         "metrics": {
-          "acc": 0.919875,
+          "acc": 0.921,
           "precision": 0.0,
           "TPR": 0,
-          "FPR": 0.080125,
+          "FPR": 0.079,
           "f1_score": 0,
           "tp": 0,
-          "fp": 358,
-          "tn": 4122,
+          "fp": 352,
+          "tn": 4128,
           "fn": 0,
           "tp_percent": 0,
           "tp_total_count": 0
@@ -118,28 +118,28 @@
     },
     "@0.5": {
       "metrics": {
-        "acc": 0.8402499999999999,
+        "acc": 0.851375,
         "precision": 0.0,
         "TPR": 0,
-        "FPR": 0.15975,
+        "FPR": 0.148625,
         "f1_score": 0,
         "tp": 0,
-        "fp": 733,
-        "tn": 3747,
+        "fp": 681,
+        "tn": 3799,
         "fn": 0,
         "tp_percent": 0,
         "tp_total_count": 0
       },
       "@constraints": {
         "metrics": {
-          "acc": 0.9185000000000001,
+          "acc": 0.920625,
           "precision": 0.0,
           "TPR": 0,
-          "FPR": 0.0815,
+          "FPR": 0.079375,
           "f1_score": 0,
           "tp": 0,
-          "fp": 364,
-          "tn": 4116,
+          "fp": 355,
+          "tn": 4125,
           "fn": 0,
           "tp_percent": 0,
           "tp_total_count": 0
@@ -148,14 +148,14 @@
     },
     "@constraints": {
       "metrics": {
-        "acc": 0.9087500000000001,
+        "acc": 0.908625,
         "precision": 0.0,
         "TPR": 0,
-        "FPR": 0.09125,
+        "FPR": 0.091375,
         "f1_score": 0,
         "tp": 0,
-        "fp": 410,
-        "tn": 4070,
+        "fp": 411,
+        "tn": 4069,
         "fn": 0,
         "tp_percent": 0,
         "tp_total_count": 0

@@ -428,8 +428,11 @@ def eval_edges_df(edges_df_true, edges_df_pred):
     
     metrics["acc"] = round(calculate_acc(tp, fp, tn, fn) ,3)
     metrics["precision"] = round(calculate_precision(tp, fp) ,3)
-    metrics["recall"] = round(calculate_recall(tp, fn) ,3)
-    metrics["f1_score"] = round(calculate_f1_score(metrics["precision"], metrics["recall"]),3)
+
+    metrics["TPR"] = round(calculate_recall(tp, fn) ,3)
+    metrics["FPR"] = round(calculate_fpr(fp, tn),3)
+    metrics["f1_score"] = round(calculate_f1_score(metrics["precision"], metrics["TPR"]),3)
+
     metrics["tp_percent"] = round(tp/tp_total_count,3) if tp_total_count > 0 else 0
     metrics["tp_total_count"] = round(tp_total_count,3)
     
@@ -1165,11 +1168,12 @@ def plot_table(results_list, metrics_dict_entries = [["@best","metrics"],["@best
     df = pd.DataFrame(df_entries).reset_index(drop=True)
     return df
 
-def plot_df_to_latex(df, columns_to_drop = ['TP Total Count'], columns_min = ['FP', 'FN'], columns_max = ['ROC AUC Score', 
+def plot_df_to_latex(df, columns_to_drop = ['TP Total Count'], columns_min = ['FP', 'FN','TPR'], columns_max = ['ROC AUC Score', 
                             'TP Percent', 'F1-Score','Accuracy','Precision',
-                             'Recall', "TP", "TN"]):
+                             'TPR', "TP", "TN"]):
     #https://github.com/pandas-dev/pandas/issues/38328
     columns_to_drop = [col for col in columns_to_drop if col in  df.columns.tolist()]
+    
     df = df.drop(columns=columns_to_drop)
 
     columns_min = [col for col in columns_min if col in  df.columns.tolist()]
@@ -1295,7 +1299,6 @@ def eval_metrics(true : List, pred_labels : List, tp_total_count : int):
 @torch.no_grad()
 def aggregate_metrics(measurements):
     
-    #computed metrics -> "acc", "precision", "recall", "tp", fp", "tn", "fn"
     aggregation_dict = {"acc":"mean", "precision":"mean", "TPR":"mean", "FPR":"mean", "f1_score":"mean", 
                         "tp":"sum", "fp":"sum", "tn":"sum", "fn":"sum",
                         "optimal_threshold":"mean", "tp_percent":"mean", "tp_total_count":"sum"}
