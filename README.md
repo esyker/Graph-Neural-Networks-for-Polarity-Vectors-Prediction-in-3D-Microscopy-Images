@@ -30,8 +30,8 @@ The figures folders contains visualizations that allow to interpret the results 
 
 - Figure for manually annotated data:
 
-[Polarity Vectors Prediction Manually Annotated](https://github.com/esyker/Graph-Neural-Networks-for-Polarity-Vectors-Prediction-in-3D-Microscopy-Images/blob/main/figures/real_annotated_normalized/mpnn_recurrent_constraints_with_threshold_with_angular_feats.png)
+![Polarity Vectors Prediction Manually Annotated](https://github.com/esyker/Graph-Neural-Networks-for-Polarity-Vectors-Prediction-in-3D-Microscopy-Images/blob/main/figures/real_annotated_normalized/mpnn_recurrent_constraints_with_threshold_with_angular_feats.png)
 
 - Figure for data with centroids detected automatically by a CNN model:
 
-[Polarity Vectors Prediction CNN detection](https://github.com/esyker/Graph-Neural-Networks-for-Polarity-Vectors-Prediction-in-3D-Microscopy-Images/blob/main/figures/real_automatic_normalized/merged-crops-5-6-7-8.jpg)
+![Polarity Vectors Prediction CNN detection](https://github.com/esyker/Graph-Neural-Networks-for-Polarity-Vectors-Prediction-in-3D-Microscopy-Images/blob/main/figures/real_automatic_normalized/merged-crops-5-6-7-8.jpg)
