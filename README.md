@@ -28,5 +28,10 @@ The ***src*** folder contains the source code for the link prediction, evaluatio
 
 The figures folders contains visualizations that allow to interpret the results qualitatively. These figures are genereated using the source code in ***3_analyze_results.ipynb**, which takes as input the results contained in the ***results*** folder in order to generate the figures. 
 
-![Polarity Vectors Prediction](https://github.com/esyker/Graph-Neural-Networks-for-Polarity-Vectors-Prediction-in-3D-Microscopy-Images/blob/main/figures/automatic_normalized/merged-crops-1-8.jpg)
+- Figure for manually annotated data:
 
+[Polarity Vectors Prediction Manually Annotated](https://github.com/esyker/Graph-Neural-Networks-for-Polarity-Vectors-Prediction-in-3D-Microscopy-Images/blob/main/figures/real_annotated_normalized/mpnn_recurrent_constraints_with_threshold_with_angular_feats.png)
+
+- Figure for data with centroids detected automatically by a CNN model:
+
+[Polarity Vectors Prediction CNN detection](https://github.com/esyker/Graph-Neural-Networks-for-Polarity-Vectors-Prediction-in-3D-Microscopy-Images/blob/main/figures/real_automatic_normalized/merged-crops-5-6-7-8.jpg)
