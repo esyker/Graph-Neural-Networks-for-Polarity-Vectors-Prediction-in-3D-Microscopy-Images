@@ -26,7 +26,7 @@ The ***src*** folder contains the source code for the link prediction, evaluatio
 
 ## Figures
 
-The figures folders contains visualizations that allow to interpret the results qualitatively. These figures are genereated using the source code in ***3_analyze_results.ipynb**, which takes as input the results contained in the ***results*** folder in order to generate the figures. 
+The figures folders contains visualizations that allow to interpret the results qualitatively. These figures are genereated using the source code in **3_analyze_results.ipynb**, which takes as input the results contained in the ***results*** folder in order to generate the figures. 
 
 - Figure for manually annotated data:
 
