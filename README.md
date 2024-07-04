@@ -5,8 +5,8 @@ Paper submited at 2024 Annual International Conference of the IEEE Engineering i
 
 ***conda_requirements.txt*** was created using ```console conda list -e > conda_requirements.txt``` and can be used to install the requirements to a conda enviroment using ```console conda create --name <env> --file conda_requirements.txt```.
 
-***pip_requirements.txt*** was created using ```console pip list --format=freeze > pip_requirements.txt``` and can be used to install the requirements to a pip enviroment using ```console python3 -m venv env
-source env/bin/activate
+***pip_requirements.txt*** was created using ```console pip list --format=freeze > pip_requirements.txt``` and can be used to install the requirements to a pip enviroment using ```console python3 -m venv env  
+source env/bin/activate  
 pip install -r pip_requirements.txt```.
 
 Install from "conda_requirements.txt" to install for a conda environment or "pip_requirements.txt" to install to a pip environment.
