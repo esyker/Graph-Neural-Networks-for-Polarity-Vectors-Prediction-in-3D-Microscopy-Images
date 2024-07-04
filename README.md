@@ -3,7 +3,7 @@ Paper submited at 2024 Annual International Conference of the IEEE Engineering i
 
 ## Requirements
 
-`conda_requirements.txt` was created using:
+`requirements/conda_requirements.txt` was created using:
 ```shell
 conda list -e > conda_requirements.txt
 ```
@@ -11,7 +11,7 @@ conda list -e > conda_requirements.txt
  ```shell
  conda create --name <env> --file conda_requirements.txt
  ```
-`pip_requirements.txt` was created using:
+`requirements/pip_requirements.txt` was created using:
 
  ```shell
  pip list --format=freeze > pip_requirements.txt
